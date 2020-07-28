@@ -203,7 +203,7 @@ spec:
               value: "{{ .Values.configurator.enforceBasepath }}"
             {{- end }}
             {{- if .Values.git.enabled }}
-            - name: GIT
+            - name: HC_GIT
               value: "true"
             {{ end }}
             {{- if and (.Values.git.enabled) (.Values.git.user.name) }}
