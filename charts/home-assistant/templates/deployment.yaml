@@ -202,7 +202,7 @@ spec:
             - name: HC_ENFORCE_BASEPATH
               value: "{{ .Values.configurator.enforceBasepath }}"
             {{- end }}
-            {{- if .Values.git.enabled) }}
+            {{- if .Values.git.enabled }}
             - name: GIT
               value: "true"
             {{ end }}
